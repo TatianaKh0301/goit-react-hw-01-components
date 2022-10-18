@@ -9,4 +9,9 @@ const StatisticsItem = ( {label, percentage} ) => {
     );
 }
 
+StatisticsItem.propTypes = {
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+}
+
 export default StatisticsItem;
