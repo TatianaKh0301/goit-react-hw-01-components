@@ -4,12 +4,12 @@ import StatisticsItem from 'components/statisticsitem/StatisticsItem';
 const Statistics = ( {stats} ) => {
     
     return (
-        <section class="statistics">
-        <h2 class="title">Upload stats</h2>
-        <ul class="stat-list">
+        <section className="statistics">
+        <h2 className="title">Upload stats</h2>
+        <ul className="stat-list">
             
             { stats.map(data => (
-                <li key = {data.id} class="item">
+                <li key = {data.id} className="item">
                     <StatisticsItem
                         label = {data.label}
                         percentage = {data.percentage}

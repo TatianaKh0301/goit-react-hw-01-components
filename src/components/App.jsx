@@ -6,7 +6,7 @@ import Statistics from './statistics/Statistics';
 import FriendList from './friendlist/FriendList';
 
 export const App = () => {
-  console.log("data-app", data);
+ 
   return (
     <div>
       <Profile 
