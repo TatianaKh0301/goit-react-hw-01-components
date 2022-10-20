@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
-const FriendListItem = ( {avatar, name, isOnline } ) => {
+const FriendListItem = ( {id, avatar, name, isOnline } ) => {
     return (
-        <div>
+        <li key = {id} className="item">
             <span className="status">{isOnline}</span>
             <img className="avatar" src={avatar} alt={name} width="48" />
             <p className="name">{name}</p>
-        </div>
+        </li>
     );
 }
 
