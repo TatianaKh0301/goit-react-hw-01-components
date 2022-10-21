@@ -1,12 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .profilewrap {
     position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
     margin: 0 auto;
-    padding: 50px;
     background-color: rgb(210, 210, 247);
     width: 480px;
-    height: 505px
+    height: 605px
 }
 
 .profile {
@@ -14,9 +19,20 @@
     top: 50%;  
     left: 50%;                      
     transform: translate(-50%, -50%);
+    background-color: rgba(196, 243, 241, 0.986);
+    width: 300px;
+    height: 395px;
+    border-radius: 3%;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(197, 194, 194);
+}
+
+.description {
+    padding: 40px;
     background-color: white;
-    width: 380px;
-    height: 465px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    height: 316px;
+    border:none;
 }
 
 .avatar {
@@ -25,29 +41,78 @@
     height: 120px;
     width: 120px;
     border-radius: 50%;
+    background-color: gray;
+    margin-bottom: 20px;
 }
 
-/* .name {
+.textwrap {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
 
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
 }
 
 .tag {
-
+    margin-bottom: 5px;
 }
 
-.location {
-
-} */
+.tag, .location {
+    color: gray;
+    font-size: 15px;
+}
 
 .stats {
     display: flex;
+    width: 100%;
+    height: 79px;
+}
+
+li {
     list-style: none;
 }
 
-/* .label {
+.statsitem {
+    border: 0.01px solid rgb(197, 194, 194);
+    width: 100px;
+    position: relative;
+    border-bottom: none;
+}
 
+.statsitem:first-child {
+    border-bottom-left-radius: 3%;
+    border-left: none;
+}
+
+.statsitem:last-child {
+    border-bottom-right-radius: 3%;
+    border-right: none;
+}
+
+.spanwrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .quantity {
+    display: block;
+    text-align: center;
+}
 
-} */
+.label {
+    color: rgb(70, 67, 67);
+    font-size: 18px;    
+}
+
+.quantity {
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+}
