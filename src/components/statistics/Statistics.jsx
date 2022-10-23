@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import StatisticsItem from 'components/statisticsitem/StatisticsItem';
+import StatisticsItem from 'components/statisticsItem/StatisticsItem';
 
 const Statistics = ( {stats} ) => {
     
