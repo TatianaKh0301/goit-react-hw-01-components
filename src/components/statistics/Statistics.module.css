@@ -1,0 +1,28 @@
+.sectionWrap {
+    background-color: rgb(210, 210, 247);
+    width: 100vw;
+}
+.statistics {
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.titleStatistics {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.statisticsList {
+    display: flex;
+    justify-content: center;
+}
+ 
+.item {
+    position: relative;
+    width: 100px;
+    height: 80px;
+    color: white;
+}
