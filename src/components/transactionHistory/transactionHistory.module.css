@@ -25,8 +25,10 @@ th, td {
 
 th {
     background-color: rgb(0, 204, 255);
+    color: white;
+    text-transform: uppercase;
 }
 
 tr:nth-child(even) {
-    background-color: rgb(233, 238, 241);
+    background-color: rgb(233, 238, 241);    
 }
