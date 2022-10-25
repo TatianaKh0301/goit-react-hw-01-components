@@ -4,13 +4,13 @@ import css from './Profile.module.css';
 const Profile = ({username, tag, location, avatar, stats}) => {
     const { followers, views, likes } = stats;
     return (
-        <div className={css.profilewrap}>
-            <div className={css.profile}>
+        <div className={css.profileWrap}>
+            <div key={username} className={css.profile}>
                 <div className={css.description}>
                     <img src={avatar} alt={username}
                         className={css.avatar} 
                     />
-                    <div className={css.textwrap}>
+                    <div className={css.textWrap}>
                         <p className={css.name}>{username}</p>
                         <p className={css.tag}>{`@${tag}`}</p>
                         <p className={css.location}>{location}</p>
@@ -18,20 +18,20 @@ const Profile = ({username, tag, location, avatar, stats}) => {
                 </div>
 
                 <ul className={css.stats}>
-                    <li className={css.statsitem}>
-                        <div className={css.spanwrap}>
+                    <li className={css.statsItem}>
+                        <div className={css.spanWrap}>
                             <span className={css.label}>Followers</span>
                             <span className={css.quantity}>{followers}</span>
                         </div>                        
                     </li>
-                    <li className={css.statsitem}>
-                        <div className={css.spanwrap}>
+                    <li className={css.statsItem}>
+                        <div className={css.spanWrap}>
                             <span className={css.label}>Views</span>
                             <span className={css.quantity}>{views}</span>
                         </div>                        
                     </li>
-                    <li className={css.statsitem}>
-                        <div className={css.spanwrap}>
+                    <li className={css.statsItem}>
+                        <div className={css.spanWrap}>
                             <span className={css.label}>Likes</span>
                             <span className={css.quantity}>{likes}</span>
                         </div>                        

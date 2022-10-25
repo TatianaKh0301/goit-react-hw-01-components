@@ -1,17 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.profilewrap {
+.profileWrap {
     position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
     margin: 0 auto;
     background-color: rgb(210, 210, 247);
     width: 100vw;
-    /* width: 480px; */
     height: 605px
 }
 
@@ -46,7 +39,7 @@
     margin-bottom: 30px;
 }
 
-.textwrap {
+.textWrap {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -74,28 +67,24 @@
     height: 79px;
 }
 
-li {
-    list-style: none;
-}
-
-.statsitem {
+.statsItem {
     border: 0.01px solid rgb(197, 194, 194);
     width: 100px;
     position: relative;
     border-bottom: none;
 }
 
-.statsitem:first-child {
+.statsItem:first-child {
     border-bottom-left-radius: 3%;
     border-left: none;
 }
 
-.statsitem:last-child {
+.statsItem:last-child {
     border-bottom-right-radius: 3%;
     border-right: none;
 }
 
-.spanwrap {
+.spanWrap {
     position: absolute;
     top: 50%;
     left: 50%;
